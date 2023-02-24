@@ -10,21 +10,9 @@ class PIDController {
         float Ki = 1;
         float Kd = 1;
     public:
-        PIDController(float p=1, float i=1, float d=1) {
-
-            Kp = p;
-            Ki = i;
-            Kd = d;
-
-        }
+        PIDController(float p=1, float i=1, float d=1):Kp(p), Ki(i), Kd(d) {}
 
         PIDController() {}
 
-        float run() {
-            
-        }
+        // float run() {}
 };
-
-int main() {
-    std::cout << "Hello, world!" << std::endl;
-}
